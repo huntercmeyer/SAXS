@@ -84,6 +84,9 @@ zlabel("f (Gaussian PDF Kernel)")
 % but I'm not sure of the best way to model that, so for now I'll just use
 % a sin.
 % It should probably also be a signal as a function of x.
+% Currently, this is sin(xRange.*10), but why? Is the signal a function of
+% time for each x-coordinate? How are we supposed to convolute the signal
+% and kernel? The kernel is a function of x for each x. Is that right?
 signal = sin(xRange.*10);
 
 % This isn't entirely right.
